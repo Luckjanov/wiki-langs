@@ -1,0 +1,11 @@
+# Editor
+*.sublime-project
+*.sublime-workspace
+
+# Project trash
+page.html
+tests
+
+# Windows artefacts
+Thumbs.db
+desktop.ini

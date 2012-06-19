@@ -1,0 +1,16 @@
+{
+   "name": "Wikipedia Languages Manager",
+   "version": "1.0",
+   "manifest_version": 2,
+   "background":
+   {
+      "scripts": ["wbackground.js"]
+   },
+   "description": "This extension hides unnessesary Languages from Wikipedia",
+   "content_scripts": 
+   [{
+      "matches": ["http://*.wikipedia.org/*"],
+      "css": ["wlangs.css"],
+      "js": ["wlangs.js"]
+   }]
+}
