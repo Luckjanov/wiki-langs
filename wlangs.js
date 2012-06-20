@@ -1,3 +1,7 @@
+String.prototype.capitalize = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+}
+
 var block = document.getElementById("p-lang");
 var links = block.getElementsByTagName('a');
 var links_size = links.length;
@@ -15,6 +19,7 @@ chrome.extension.sendRequest({command: "get_langs"}, function(response){
 			}
 			else if(links[i].lang == langs[j])
 			{
+				links[i].innerHTML = links[i].innerHTML.capitalize();
 				break;
 			}
 	}
